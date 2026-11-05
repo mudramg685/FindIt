@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Log in · FindIt</title><link rel="stylesheet" href="/style.css"></head>
+<body class="auth-page">
+  <a class="brand auth-brand" href="/"><span class="brand-icon">f</span> FindIt</a>
+  <main class="auth-wrap">
+    <div class="auth-intro"><span class="eyebrow">YOUR CAMPUS, RECONNECTED</span><h1>Good things<br>find their way <em>back.</em></h1><p>A campus community for lost things, found things, and the people who help bring them home.</p><blockquote class="mini-quote"><span class="quote-mark">“</span><span>What’s lost can still find its way home—sometimes with a little help from all of us.</span><cite>THE FINDIT COMMUNITY</cite></blockquote></div>
+    <form class="panel auth-form" id="loginForm">
+      <div class="login-heading"><span class="login-mark">↗</span><div><span class="eyebrow">WELCOME BACK</span><h2>Sign in</h2><p class="muted">Pick up where you left off.</p></div></div>
+      <div class="demo-logins"><div class="demo-heading"><span class="demo-title">QUICK DEMO ACCESS</span><span class="demo-hint">One click sign-in</span></div><div class="demo-options"><button type="button" class="demo-account" data-demo-login="student"><span class="demo-role"><span class="demo-dot student-dot"></span>Continue as Student</span><span class="demo-arrow">↗</span></button><button type="button" class="demo-account" data-demo-login="staff"><span class="demo-role"><span class="demo-dot staff-dot"></span>Continue as Staff</span><span class="demo-arrow">↗</span></button><button type="button" class="demo-account admin-demo-account" data-demo-login="admin"><span class="demo-role"><span class="demo-dot staff-dot"></span>Continue as Campus Admin</span><span class="demo-arrow">↗</span></button></div></div>
+      <label>Campus email<input required type="email" name="email" placeholder="you@campus.edu" autocomplete="username"></label>
+      <label>Password<input required type="password" name="password" placeholder="Your password" autocomplete="current-password"></label>
+      <div id="notice" class="notice hidden"></div><button class="button full">Log in <span>→</span></button>
+      <p class="form-foot">New to FindIt? <a href="/register.html">Create an account</a></p>
+    </form>
+  </main>
+  <script src="/script.js"></script>
+</body>
+</html>

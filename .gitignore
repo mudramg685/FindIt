@@ -1,0 +1,9 @@
+target/
+uploads/*
+!uploads/.gitkeep
+.env
+.vscode/
+
+.maven-home/
+.mvn/wrapper/dists/
+startup.log
