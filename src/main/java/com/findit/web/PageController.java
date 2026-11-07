@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 /** Friendly extension-free URLs for students typing routes directly. */
 @Controller
 public class PageController {
+    @GetMapping("/") public String home(){return "redirect:/login.html";}
+    @GetMapping("/browse") public String browse(){return "forward:/index.html";}
     @GetMapping("/login") public String login(){return "forward:/login.html";}
     @GetMapping("/register") public String register(){return "forward:/register.html";}
     @GetMapping("/dashboard") public String dashboard(){return "forward:/dashboard.html";}

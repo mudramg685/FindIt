@@ -199,3 +199,8 @@ body:after{inset:0}
 :root[data-theme="light"] .claimed-check{background:linear-gradient(145deg,#baf8e3,#65d8c3);color:#123b36}
 :root[data-theme="light"] .person-copy .claim-date{color:#657a7d}
 :root[data-theme="light"] .vip-mark{background:#eee9ff;border-color:#c8bbed;color:#57418b}
+.auth-top-actions{position:fixed;top:20px;right:174px;z-index:22}.auth-top-actions .button{min-height:38px;padding:8px 13px;border:1px solid #587276;background:linear-gradient(130deg,#1b2c31,#34484d 48%,#152328);color:#e7f5f5}.claimed-phone{display:block;width:max-content;max-width:100%;margin-top:4px;color:#aaf2e9;font-size:11px;font-weight:700;letter-spacing:.2px;overflow-wrap:anywhere}.claimed-phone:hover{color:#fff;text-decoration:underline}.detail-claimed-phone{margin-top:8px}.claim-record-details{white-space:pre-line;overflow-wrap:anywhere}
+:root[data-theme="light"] .auth-top-actions .button{background:linear-gradient(130deg,#f9fcfb,#e2eded);border-color:#b8cacc;color:#263e42}
+:root[data-theme="light"] .claimed-phone{color:#087d80}
+:root[data-theme="light"] .claimed-phone:hover{color:#095d61}
+@media(max-width:600px){.auth-top-actions{top:14px;right:145px}.auth-top-actions .button{padding:7px 9px;font-size:10px}}

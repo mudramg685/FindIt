@@ -15,6 +15,7 @@ public class Item {
     private String imageFilename;
     @ManyToOne(fetch=FetchType.LAZY,optional=false) @JoinColumn(name="user_id") private AppUser user;
     @ManyToOne(fetch=FetchType.LAZY) @JoinColumn(name="claimed_by_id") private AppUser claimedBy;
+    @Column(length=40) private String claimedByPhone;
     private Instant claimedAt;
     @Column(nullable=false) private String status="OPEN";
     @Column(nullable=false) private Instant createdAt=Instant.now();
@@ -27,6 +28,7 @@ public class Item {
     public String getImageFilename(){return imageFilename;} public void setImageFilename(String v){imageFilename=v;}
     public AppUser getUser(){return user;} public void setUser(AppUser v){user=v;}
     public AppUser getClaimedBy(){return claimedBy;} public void setClaimedBy(AppUser v){claimedBy=v;}
+    public String getClaimedByPhone(){return claimedByPhone;} public void setClaimedByPhone(String v){claimedByPhone=v;}
     public Instant getClaimedAt(){return claimedAt;} public void setClaimedAt(Instant v){claimedAt=v;}
     public String getStatus(){return status;} public void setStatus(String v){status=v;}
     public Instant getCreatedAt(){return createdAt;}
